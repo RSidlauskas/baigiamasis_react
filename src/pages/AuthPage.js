@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Login from '../components/Authenticate/Login'
+import Register from "../components/Authenticate/Register";
 
-const Login = () => {
+const AuthPage = () => {
 
-
-
+    const [register, setRegister] = useState(false)
 
     return (
-        <div>
-            Login
+        <div className="d-flex justify-content-center align-items-center vh-75">
+            {register
+                ? <Register setRegister={setRegister} />
+                : <Login    setRegister={setRegister}/>
+            }
+
         </div>
     );
 };
 
-export default Login;
+export default AuthPage;

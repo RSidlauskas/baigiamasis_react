@@ -1,0 +1,45 @@
+/* Forum full */
+
+.forum{
+    background-color: #f8f5f2;
+    width: 90%;
+    box-shadow: 0px 0px 1px 0px rgb(0, 0, 0);
+}
+
+/* Forum listings */
+
+.top{
+    background-color: #a69c8f;
+    color: #fffffe;
+}
+
+.list{
+    background-color: #feefe8;
+    border: none;
+}
+
+.topicBox{
+    background-color: #fffffe;
+    border: none;
+}
+
+.listing{
+    padding: 0.4rem;
+    border-top: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.listingTitle:hover{
+    color: #f45d48;
+}
+
+/* Comment*/
+
+.commentBoxImg{
+    max-width: 80%;
+}
+
+.commentImg{
+    width: 100%;
+    object-fit: contain;
+}

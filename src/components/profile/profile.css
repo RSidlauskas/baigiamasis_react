@@ -1,0 +1,85 @@
+.profile {
+    background-color: #f8f5f2;
+    width: 100%;
+    height: 260px;
+}
+
+.userActivityFeed{
+
+}
+
+.profileImgBox {
+    width: 160px;
+    height: 120px;
+    z-index: 2;
+}
+.profileImg {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.icon-div{
+    position: relative;
+    left: -220px;
+}
+.icon-hover {
+    font-size: 2em;
+    transition-duration: 0.3s;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #f8f5f2;
+}
+.icon-div:before{
+    content: "";
+    width: 220px;
+    height: 50px;
+    background-color: #f8f5f2;
+    z-index: 1;
+}
+.icon-text {
+    transform: translateX(-210px);
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;;
+}
+.icon-hover:hover {
+    color: #f45d48;
+    cursor: pointer;
+}
+.icon-hover:hover + h6 {
+    transform: translateX(5px);
+}
+
+@media (max-width: 800px){
+    .profile{
+        flex-direction: column;
+    }
+    .profileInfo{
+        position: relative;
+        left: 160px;
+        top: -88%;
+    }
+    .icon-div{
+        left: -270px;
+    }
+}@media (max-width: 800px){
+    .profile{
+        flex-direction: row;
+    }
+    .profileInfo{
+        position: initial;
+        left: 160px;
+        top: -58%;
+    }
+    .icon-div{
+        position: initial;
+        width: 30px;
+    }
+    .icon-div:before{
+        width: 0;
+        height: 0;
+    }
+    .icon-text{
+        display: none;
+    }
+}

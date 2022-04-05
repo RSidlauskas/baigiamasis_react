@@ -1,0 +1,77 @@
+.ModalBackground {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(133, 133, 133, 0.46);
+    backdrop-filter: blur(5px);
+}
+
+.Modal{
+    background-color: #fff;
+    min-height: 150px;
+    padding: 2rem;
+}
+
+.x-button{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.x-button:hover{
+    fill: #f45d48;
+    transition-duration: 0.1s;
+    transform: scale(1.25);
+    animation: pulse 1s;
+    filter: drop-shadow(0px 0px 1.1em #F8F5F2);
+    /*box-shadow: 0 0 0 0.2em #F8F5F2;*/
+}
+
+.x-button2{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.x-button2:hover{
+    fill: #078080;
+    transition-duration: 0.1s;
+    transform: scale(1.25);
+    animation: pulse 1s;
+    filter: drop-shadow(0px 0px 1.1em #F8F5F2);
+    /*box-shadow: 0 0 0 0.2em #F8F5F2;*/
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 #f45d48; }
+    0% {filter: drop-shadow(0px 0px 0px #f45d48 )}
+}
+
+/*------------ notifcation modal*/
+
+.notificationModal{
+    z-index: 4;
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: #fffffe;
+    box-shadow: 0px 0px 8px 1px #a69c8f;
+    overflow: auto;
+}
+
+.notification{
+    width: 100%;
+    padding: 10px;
+}
+
+.bar{
+    padding: 2px;
+    background-color: #fffffe;
+    color: #232323;
+}
+

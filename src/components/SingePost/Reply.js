@@ -4,36 +4,46 @@ import axios from "axios";
 import Context from "../../context/context";
 import {useNavigate} from "react-router-dom";
 
-const Reply = () => {
+const Reply = ({currentTopic, load, randomNum}) => {
 
+    const {user} = useContext(Context)
     const [errorMessage, setErrorMessage] = useState("")
     const nav = useNavigate()
 
     const inputs = {
-        description: useRef(),
+        description: useRef()
     }
 
     const post = async (e) => {
         e.preventDefault()
+        load(randomNum + 1)
 
-        const post = {
-            title: inputs.title.current.value,
-            description: inputs.description.current.value
+        const comment = {
+            description: inputs.description.current.value,
+            post_id: currentTopic._id,
+            post_owner: currentTopic.owner,
         }
 
+        inputs.description.current.value = ""
+
+
         try {
-            const res = await axios.post("http://localhost:4000/createPost", post, {withCredentials: true})
+            const res = await axios.post("http://localhost:4000/createComment", comment, {withCredentials: true})
             console.log(res.data)
 
             if (res.data.error === false) {
-                nav("/Profile")
+
+
             } else{
                 setErrorMessage(res.data.message)
+
             }
+
 
         } catch (e) {
             console.log(e)
         }
+
     }
 
 

@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react';
-import TopicDiscussion from "../components/Forum/TopicDiscussion";
+import PostDiscussion from "../components/SingePost/PostDiscussion";
 import axios from "axios";
 import {useParams} from "react-router-dom";
 
-const SingleTopic = () => {
+const SinglePost = () => {
 
     const {id} = useParams()
     const [currentTopic, setCurrentTopic] = useState()
 
     useEffect(async () => {
         try {
-            const res = await axios.get("http://localhost:4000/singlePost/"+id)
-            setCurrentTopic(res.data)
+            const response = await axios.get("http://localhost:4000/getSinglePost/"+id)
+            setCurrentTopic(response.data)
         } catch (e) {
             console.log(e)
         }
@@ -19,9 +19,9 @@ const SingleTopic = () => {
 
     return (
         <div className="d-flex justify-content-center align-items-center">
-            {currentTopic && <TopicDiscussion/>}
+            {currentTopic && <PostDiscussion currentTopic={currentTopic} />}
         </div>
     );
 };
 
-export default SingleTopic;
+export default SinglePost;

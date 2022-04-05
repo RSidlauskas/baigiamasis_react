@@ -41,23 +41,21 @@ const Register = ({setRegister}) => {
                   className="d-flex flex-column justify-content-center align-items-center gap-3 w-100">
 
                 <div className="inputBox">
-                    <input className="input" ref={inputs.username} id="form-one" type="text" placeholder="Username"/>
+                    <input className="input" ref={inputs.username} type="text" placeholder="Username"/>
                     <span className="inputBorder"/>
                 </div>
 
                 <div className="inputBox">
-                    <input className="input" ref={inputs.password_one} id="form-one" type="password" placeholder="Password"/>
+                    <input className="input" ref={inputs.password_one} type="password" placeholder="Password"/>
                     <span className="inputBorder"/>
                 </div>
 
                 <div className="inputBox">
-                    <input className="input" ref={inputs.password_two} id="form-one" type="password" placeholder="Repeat password"/>
+                    <input className="input" ref={inputs.password_two} type="password" placeholder="Repeat password"/>
                     <span className="inputBorder"/>
                 </div>
 
-                {errorMessage &&
-                    <div className="red">{errorMessage}</div>
-                }
+                {errorMessage && <div className="red">{errorMessage}</div>}
 
                 <input type="submit" value="Register" className="button b-3 w-100"/>
 

@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* ----------- Global styles*/
+a{
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover{
+  color: initial;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.z-index10{
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+/*------------- Class Effects*/
+
+.pointer{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link{
+  color: #078080;
+}
+
+.link:hover{
+  color: #a69c8f;
+}
+
+.vh-75{
+  min-height: 75vh;
+}
+
+.w-90{
+  width: 90%;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.flex-2{
+  flex: 2;
+}
+
+.flex-3{
+  flex: 3;
+}
+
+.flex-4{
+  flex: 4;
+}
+
+
+/*------------- Element styles*/
+
+.button{
+  padding: 0.4rem;
+  border: none;
+  transition: 0.3s;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.button:hover{
+  /*opacity: 0.9;*/
+}
+
+.b-1{
+  background-color: #078080;
+  color: #fffffe;
+}
+
+.b-2{
+  background-color: #a69c8f;
+  color: #fffffe;
+}
+
+.b-22{
+  background-color: rgba(166, 156, 143, 0.84);
+  color: #fffffe;
+}
+
+.b-3{
+  background-color: #f45d48;
+  color: #fffffe;
+}
+
+.b-1:hover{
+  box-shadow: inset 0em -3em 0em 0em rgba(8, 154, 154, 0.83);
+}
+.b-2:hover{
+  box-shadow: inset 0em -3em 0em 0em rgba(35, 35, 35, 0.13);
+}
+.b-22:hover{
+  box-shadow: inset 0em -10em 0em 0em rgba(35, 35, 35, 0.13);
+  border-bottom: 2px solid #f45d48;
+}
+.b-3:hover{
+  box-shadow: inset 0em -3em 0em 0em rgba(248, 122, 105, 0.83);
+}
+
+.heart{
+  color: indianred;
 }

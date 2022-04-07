@@ -5,6 +5,7 @@ import parse from 'html-react-parser';
 const Comment = ({comment, showPhoto, hideLinks}) => {
 
     const [photo, setPhoto] = useState(null)
+    const [memberSince, setMemberSince] = useState(null)
 
     useEffect(async () => {
         let username = ""
@@ -18,6 +19,7 @@ const Comment = ({comment, showPhoto, hideLinks}) => {
 
         const response = await axios.post("http://localhost:4000/getUserByUsername", username, {withCredentials: true})
         setPhoto(response.data.profileImage)
+        setMemberSince(response.data.memberSince)
     }, [])
 
     function getDate(time) {
@@ -86,7 +88,8 @@ const Comment = ({comment, showPhoto, hideLinks}) => {
             </div>
             <div className="d-flex">
                 <div className="flex-1 list p-2">
-                    <p>Memeber</p>
+                    <p className="m-0">Member since:</p>
+                    <p>{memberSince && getDate(memberSince)}</p>
                     <div className="commentBoxImg">
                         {photo && showPhoto && <img className="commentImg pb-2" src={photo} alt="profilePic"/>}
                     </div>

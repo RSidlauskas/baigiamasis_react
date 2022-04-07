@@ -20,8 +20,6 @@ const PostDiscussion = ({currentTopic}) => {
     useEffect(async () => {
         if (activePage !== null) {
             try {
-                console.log("veikia postimas")
-
                 const res = await axios.get("http://localhost:4000/getPostComments/" + currentTopic._id + "/" + activePage)
                 console.log(res.data)
                 setComments(res.data.postComments)
@@ -53,9 +51,6 @@ const PostDiscussion = ({currentTopic}) => {
         setActivePage(newActivePage);
         nav(`/SinglePost/${currentTopic._id}/?page=${newActivePage}`);
     };
-
-
-
 
     return (
         <div className="mt-5 p-4 min-vh-100 forum">

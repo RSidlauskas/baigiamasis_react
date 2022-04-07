@@ -5,43 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4785c9-6a37-41ef-b805-963eba4e2dd7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Authenticate/Auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Authenticate/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Authenticate/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Favorites/FavoriteView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Forum/Forum.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Forum/Forum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Forum/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SingePost/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SingePost/PostDiscussion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SingePost/Reply.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/Modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/notificationModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/Pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/PaginationGlobal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/profile/Activity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/profile/ProfileView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/profile/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/toolbar/Toolbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/toolbar/toolbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/topicCreate/CreateForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/topicCreate/NewTopic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AuthPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/CreateTopic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Favorites.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Homepage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/SinglePost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingePost/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingePost/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingePost/PostDiscussion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingePost/PostDiscussion.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +81,7 @@
       <workItem from="1648446291815" duration="98375000" />
       <workItem from="1649007121894" duration="37729000" />
       <workItem from="1649151235647" duration="4000" />
-      <workItem from="1649151269308" duration="14424000" />
+      <workItem from="1649151269308" duration="17265000" />
     </task>
     <servers />
   </component>
